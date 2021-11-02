@@ -1,0 +1,33 @@
+1.select count(name) as citiesInUSA from city
+where CountryCode ="USA";
+
+2.select Population, LifeExpectancy from country where name="Argentina"; 
+-- the population and lifeExpectancy are colunms
+
+3.select * frOM country where lifeexpectancy is not null order by lifeexpectancy DESC LIMIT 1;
+-- desc limit 1 will show only 1 first row, as limit will show 1 then desc or desending will go down
+
+4.select city.name FROM country left join city on country.capital = city.id where country.code ="ESP";
+--using a table name with .(column) will create a path
+
+5.attempt 1: select Language from countrylanguage where CountryCode = code from country where Region ="Southeast Asia";
+--not working
+
+6.select name from city where name like"F%";
+--%f%= contains f, f% first letter f, %f last letter
+
+7.select count(country.name) from city join country on city.countrycode=country.code where country.name="china";
+
+
+8.select name, population from country where population !=0 order by population desc limit 1;
+
+9.select count(name) from country;
+
+10.select name,SurfaceArea from country order by Surfacearea desc limit 10;
+
+11.select name, population from city where CountryCode ="JPN" order by population desc limit 5;
+
+12.select name, headOfState from country where headOfState="Elizabeth II";
+
+13.
+
