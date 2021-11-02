@@ -8,13 +8,13 @@ where CountryCode ="USA";
 -- desc limit 1 will show only 1 first row, as limit will show 1 then desc or desending will go down
 
 4.select city.name FROM country left join city on country.capital = city.id where country.code ="ESP";
---using a table name with .(column) will create a path
+-- using a table name with .(column) will create a path
 
 5.attempt 1: select Language from countrylanguage where CountryCode = code from country where Region ="Southeast Asia";
---not working
+-- not working
 
 6.select name from city where name like"F%";
---%f%= contains f, f% first letter f, %f last letter
+-- %f%= contains f, f% first letter f, %f last letter
 
 7.select count(country.name) from city join country on city.countrycode=country.code where country.name="china";
 
